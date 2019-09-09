@@ -21,20 +21,31 @@ export default {
     .claimWrapper {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         font-family: Montserrat, sans-serif;
+        color: white;
     } 
 
     .claim {
         font-size: 50px;
         margin: 0;
+
+        @media (min-width: 768px) {
+            font-size: 80px;
+        }
     }
 
     .subclaim {
          margin: 20px 0 0 0;
          font-size: 13px;
-         justify-content: center;
+
+         @media (min-width: 768px) {
+            font-size: 25px;
+            letter-spacing: 1px;
+            width: 500px;
+            font-weight: 300;
+        }
     }
 
 </style>
